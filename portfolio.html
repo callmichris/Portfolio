@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoako Christian - Computer Scientist</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .scroll-down { animation: bounce 2s infinite; }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .skill-bar { transition: width 1s ease-in-out; }
+        .project-card { transition: transform 0.3s ease; }
+        .project-card:hover { transform: translateY(-5px); }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0066cc',
+                        secondary: '#4a90e2'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-['Inter']">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="text-2xl font-['Pacifico'] text-primary">Amoako Christian</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-primary">About</a>
+                    <a href="#projects" class="text-gray-700 hover:text-primary">Projects</a>
+                    <a href="#publications" class="text-gray-700 hover:text-primary">Publications</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-24 pb-16 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center">
+                <div class="flex flex-col items-center md:items-start">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Advancing Computer Science Through Innovation</h1>
+                    <p class="text-xl text-gray-600 mb-8">Specialized in Web Development, Machine Learning, and Data Analytics</p>
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-primary text-white !rounded-button hover:bg-primary/90 cursor-pointer mb-6">
+                        Get in Touch
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="callmichris.jpeg" alt="Amoako Christian" class="rounded-full w-full max-w-md mx-auto shadow-xl">
+                </div>
+            </div>
+            <div class="scroll-down absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                <i class="ri-arrow-down-line text-3xl text-gray-400"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <img src="https://public.readdy.ai/ai/img_res/ad8243b5c5a7eb2b6c1e971d561e6255.jpg" 
+                         alt="Working" 
+                         class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <p class="text-lg text-gray-700 mb-6">With a Bachelor Of Technology Degree In Computer Technology, I specialize in developing responsive  and user friendly web pages. Currently leading in Machine Learning in Kumasi Technical University.</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4">Key Skills</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Front End Web Development</span>
+                                    <span class="text-gray-600">95%</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded-full">
+                                    <div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Data Analysis</span>
+                                    <span class="text-gray-600">90%</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded-full">
+                                    <div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Back-End Web Development</span>
+                                    <span class="text-gray-600">85%</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded-full">
+                                    <div class="h-2 bg-primary rounded-full skill-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="the cv.docx" class="inline-flex items-center px-6 py-3 bg-white border border-gray-300 text-gray-700 !rounded-button hover:bg-gray-50 cursor-pointer">
+                        <i class="ri-download-line mr-2"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">Featured Projects</h2>
+            
+            <div class="flex justify-center mb-8 space-x-4">
+                <button class="px-4 py-2 !rounded-button bg-primary text-white cursor-pointer">All</button>
+                <button class="px-4 py-2 !rounded-button bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 cursor-pointer">Front End</button>
+                <button class="px-4 py-2 !rounded-button bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 cursor-pointer">Back-End</button>
+                <button class="px-4 py-2 !rounded-button bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 cursor-pointer">Data Analyses</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="code.jpg" 
+                         alt="Front End" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Creative and Responsive Web Pages</h3>
+                        <p class="text-gray-600 mb-4">Advanced and Responsive Web Pages with embedded ai for easy and user-friendly navigations.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Html5</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">W3schools</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CUDA</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="back.jpg" 
+                         alt="Distributed Systems Project" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Back-End Development </h3>
+                        <p class="text-gray-600 mb-4">Responsive Database For Companies And Cloud Engineering Companies and personnel .</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">PHP</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">My SQLI</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Mongo DB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="analyses.jpg" 
+                         alt="ML Project" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Data Analysis With Power BI</h3>
+                        <p class="text-gray-600 mb-4">Populaiton Census Analysis During Covid-19 Pandemic.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Power BI</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">pandas</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">R</span>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">Publications</h2>
+            
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">KsTU Staff Request Form</h3>
+                    <p class="text-gray-600 mb-4">Amoako Christian, Williams Bonsu, Zhang, L.</p>
+                    <p class="text-gray-700 mb-4">Request Response Intelligence, 2024</p>
+                    <div class="flex items-center space-x-4">
+                        <a href="Staff Request Form.docx" class="text-primary hover:text-primary/80 flex items-center">
+                            <i class="ri-file-pdf-line mr-2"></i>
+                           REPORT
+                        </a>
+                    
+                        <span class="text-gray-600 flex items-center">
+                            <i class="ri-quote-line mr-2"></i>
+                            Citations: 156
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">Module Learning Algorithm, Machine Learning: A Comprehensive Survey</h3>
+                    <p class="text-gray-600 mb-4">Amoako Christian, Dr. Emelia Brown.</p>
+                    <p class="text-gray-700 mb-4">ACM Computing Surveys, 2023</p>
+                    <div class="flex items-center space-x-4">
+                        <a href="Machine Learning.docx" class="text-primary hover:text-primary/80 flex items-center">
+                            <i class="ri-file-pdf-line mr-2"></i>
+                            PDF
+                        </a>
+                    
+                        <span class="text-gray-600 flex items-center">
+                            <i class="ri-quote-line mr-2"></i>
+                            Citations: 234
+                        </span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-2">University Student Analyses </h3>
+                    <p class="text-gray-600 mb-4">Amoako Christian,Dr. Cecilia Dapaa, Kumar P..</p>
+                    <p class="text-gray-700 mb-4">K-Net Power BI. Kofi Anan Institute Of Technology., 2023</p>
+                    <div class="flex items-center space-x-4">
+
+                        
+                        <span class="text-gray-600 flex items-center">
+                            <i class="ri-quote-line mr-2"></i>
+                            Citations: 89
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">Get in Touch</h2>
+            
+                
+                <div>
+                    <div class="bg-gray-50 p-8 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="ri-mail-line text-xl text-primary mr-4"></i>
+                                <span class="text-gray-700">christianamoakorighteous@gmail.com</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-phone-line text-xl text-primary mr-4"></i>
+                                <span class="text-gray-700">+233 544 939 922</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-map-pin-line text-xl text-primary mr-4"></i>
+                                <span class="text-gray-700">Kumasi,Ghana</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="ri-calendar-line text-xl text-primary mr-4"></i>
+                                <span class="text-gray-700">Office Hours: Mon-Fri, 9:00-17:00</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/callmichris" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300">
+                                    <i class="ri-github-line text-xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/christian-amoako" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300">
+                                <i class="ri-linkedin-line text-xl"></i>
+                            </a>
+                            <a href="https://x.com/@Call_mi_chris" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300">
+                                    <i class="ri-twitter-line text-xl"></i>
+                                </a>
+                                <a href="mailto:christianamoakorighteous@gmail.com" class="w-10 h-10 flex items-center justify-center bg-gray-200 rounded-full hover:bg-gray-300">
+                                    <i class="ri-google-line text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-primary">About</a></li>
+                        <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+                        <li><a href="#publications" class="hover:text-primary">Publications</a></li>
+                        <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/callmichris" class="hover:text-primary">
+                            <i class="ri-github-line text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/christian-amoako" class="hover:text-primary">
+                            <i class="ri-linkedin-line text-xl"></i>
+                        </a>
+                        <a href="https://x.com/@Call_mi_chris" class="hover:text-primary">
+                            <i class="ri-twitter-line text-xl"></i>
+                        </a>
+                        <a href="mailto:christianamoakorighteous@gmail.com" class="hover:text-primary">
+                            <i class="ri-google-line text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-gray-400">&copy; 2025 Amoako Christian. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 cursor-pointer">
+        <i class="ri-arrow-up-line text-xl"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTop = document.getElementById('back-to-top');
+            const contactForm = document.getElementById('contact-form');
+            window.addEventListener('scroll'), () => {
+                if (window.pageYOffset > 100) {
+                    backToTop.style.opacity = '1';
+                } else {
+                    backToTop.style.opacity = '0';
+                }
+            }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+
+                emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", data) // Ensure to replace with actual service and template IDs
+
+                    .then((response) => {
+                        const notification = document.createElement('div');
+                        notification.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300';
+                        notification.textContent = 'Message sent successfully!';
+                        document.body.appendChild(notification);
+                        setTimeout(() => {
+                            notification.remove();
+                        }, 3000);
+                        contactForm.reset();
+                    }, (error) => {
+                        const notification = document.createElement('div');
+                        notification.className = 'fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300';
+                        notification.textContent = 'Failed to send message. Please try again.';
+                        document.body.appendChild(notification);
+                        setTimeout(() => {
+                            notification.remove();
+                        }, 3000);
+                    });
+
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
